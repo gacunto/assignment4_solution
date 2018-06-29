@@ -1,0 +1,9 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items" ui-sref="menu-items({categoryShortName: item.short_name})">
+    <span ng-if="item.id.length>0">ID: {{ item.id }}<br></span>
+    <span ng-if="item.short_name.length>0">Short name: {{ item.short_name }}<br></span>
+    <span ng-if="item.name.length>0">Name: {{ item.name }}<br></span>
+    <span ng-if="item.special_instructions.length>0">Special instructions: {{ item.special_instructions }}<br></span>
+    <br>
+  </li>
+</ul>
